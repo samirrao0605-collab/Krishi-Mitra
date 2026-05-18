@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KrishiMitra - Crop Selection</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="background">
+    <div class="rain" id="rain"></div> <!-- Rain container -->
+  <div class="center-box animate">
+    <label id="cropLabel">Select Crop:</label>
+    <select id="cropSelect">
+      <option value="">--Select--</option>
+      <option value="rice">Rice</option>
+      <option value="wheat">Wheat</option>
+      <option value="maize">Maize</option>
+      <option value="cotton">Cotton</option>
+      <option value="sugarcane">Sugarcane</option>
+      <option value="jute">Jute</option>
+      <option value="pulses">Pulses</option>
+      <option value="tea">Tea</option>
+      <option value="coffee">Coffee</option>
+      <option value="mustard">Mustard</option>
+    </select>
+
+    <label id="langLabel">Select Language:</label>
+    <select id="languageSelect" onchange="updateLanguage('crop')">
+      <option value="en">English</option>
+      <option value="hi">Hindi</option>
+      <option value="bn">Bengali</option>
+    </select>
+
+    <button onclick="goToSoil()">Next</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
